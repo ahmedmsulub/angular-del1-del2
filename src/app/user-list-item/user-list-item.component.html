@@ -1,0 +1,11 @@
+<!-- <div id="bodyOfList">
+    <ul class="list-group-item list-group-item-primary style">
+        <li  [style.color]="change ? 'yellow' : 'grey'"[routerLink]="['/user', user.id]"
+            >{{userNames.name}}
+        </li>
+    </ul>
+</div> -->
+<li [style.color]="change ? 'yellow' : 'grey'" [routerLink]="['/userNames', userNames.id, userNames.name]"
+  routerLinkActive="router-link-active" class=" border border-dark list-unstyled card card-body">
+  {{userNames.name}}
+</li>
