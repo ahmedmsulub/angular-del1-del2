@@ -8,22 +8,19 @@ import { Router } from '@angular/router';
 })
 export class PageNotFoundComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router) {console.log('ur in error page') }
 
   ngOnInit() {
 
   }
-  notToBeReached(){
-
-  }
-  navigate(){
-    this.router.navigate(['/**'])
-  }
-  show:boolean= true;
-  hide:boolean= false;
-  toggle(){
-    this.show = !this.show;
-  }
+  // navigate(){
+  //   this.router.navigate(['/**'])
+  // }
+  // show:boolean= true;
+  // hide:boolean= false;
+  // toggle(){
+  //   this.show = !this.show;
+  // }
   
 
 }

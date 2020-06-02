@@ -1,5 +1,5 @@
 <form *ngIf="!show"(ngSubmit)="submitButton(userForm)" method="post" #userForm="ngForm" >
-    {{userForm.form.valid}}
+
     <div class="container">
         <label for="uname"><b>Email</b></label>
         <input #email="ngModel" [(ngModel)]="emailInput" type="text" [class.is-invalid]="email.invalid  && email.untouched" class="form-control" placeholder="Enter Email" name="email" id="email"  required>
@@ -19,5 +19,3 @@
 </div>
 
 
-<h1>john.doe@email.com</h1>
-<h1>1234567890</h1> 

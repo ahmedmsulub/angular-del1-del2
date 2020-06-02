@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   createNewUser: boolean = false;
   show=this.Auth.show;
   @Output() send = new EventEmitter<string>();
-  constructor(private router:Router, private Auth:AuthService,private api:DataService) { }  
+  constructor(private router:Router, private Auth:AuthService,private api:DataService) {}  
 
   ngOnInit(){
     Object.keys(localStorage).forEach(function(key){})
@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
         this.Auth.login();
         this.saveUser=form.value.email;
         localStorage.setItem('email',(this.saveUser));
-        console.log(this.saveUser)
+        // console.log(this.saveUser)
       }
     })
 

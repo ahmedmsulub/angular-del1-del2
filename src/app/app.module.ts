@@ -17,13 +17,12 @@ import { HttpClientModule } from '@angular/common/http'
 import { DataService } from './api.service';
 
 const linkBetween=   RouterModule.forRoot([
+  {path:'userNames/:id',component:SingleUserComponent},
   {path:'dashboard',component:DashboardComponent},
   {path:'login',component:LoginComponent},
+  // {path: 'singleUser', component: SingleUserComponent },
   {path:'**',component:PageNotFoundComponent},
-  { path: 'user/:id', component: SingleUserComponent },
-  { path: 'singleUser', component: SingleUserComponent },
-
- ])
+])
 @NgModule({
   declarations: [
     AppComponent,

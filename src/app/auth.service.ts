@@ -11,8 +11,13 @@ export class AuthService {
   
   login(){
     this.show=true;
-    console.log(this.show)
+    // console.log(this.show)
     this.router.navigate(['/dashboard']);
+  }
+
+  user(){
+    this.show=true;
+    this.router.navigate(['/username'])
   }
 
   logout(user: string){

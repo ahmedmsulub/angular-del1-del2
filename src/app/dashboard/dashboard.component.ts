@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { DataService } from '../api.service';
-import { JsonPipe } from '@angular/common';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -22,7 +21,7 @@ export class DashboardComponent implements OnInit {
   }
  
   addOutPutFunc(event:{}): void {
-    this.addUser={
+    this.addUser = {
       name:event
     }
     this.userList.unshift(this.addUser);

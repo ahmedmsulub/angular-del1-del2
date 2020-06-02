@@ -14,5 +14,8 @@ export class UserListItemComponent implements OnInit {
   @Input() public change;
 
   constructor(private router:Router,private api:DataService) { }
+  routeToSingle(){
+    this.router.navigate(['/singeUser'])
+  }
   ngOnInit() { }
 }
